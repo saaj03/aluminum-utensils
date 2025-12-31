@@ -1,0 +1,14 @@
+.detail {
+  display: flex;
+  gap: 30px;
+}
+
+.detail img {
+  width: 300px;
+}
+
+.qty {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
