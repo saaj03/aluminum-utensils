@@ -1,15 +1,14 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f6f6f6;
-}
-
-.container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 20px;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 button {
   cursor: pointer;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 24px;
 }

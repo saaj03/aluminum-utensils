@@ -1,8 +1,15 @@
 .header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
   background: #111;
   color: white;
-  padding: 15px 25px;
+  padding: 16px 24px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+}
+
+.header-actions {
+  display: flex;
+  gap: 15px;
 }

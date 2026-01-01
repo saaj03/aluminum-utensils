@@ -1,6 +1,18 @@
-.checkout input,
-.checkout select {
+.checkout-box {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+}
+
+.checkout input {
+  display: block;
   width: 100%;
+  margin-bottom: 12px;
   padding: 10px;
-  margin-bottom: 15px;
+}
+
+.summary {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
 }

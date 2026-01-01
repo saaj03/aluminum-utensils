@@ -1,12 +1,20 @@
+import { Link } from "react-router-dom";
+import { useCart } from "../../context/CartContext";
+import { useTheme } from "../../context/ThemeContext";
 import "./Header.css";
 
-function Header({ cartCount, onCartOpen }) {
+function Header() {
+  const { cart } = useCart();
+  const { toggleTheme } = useTheme();
+
   return (
     <header className="header">
-      <h2>Aluminum Utensils</h2>
-      <button onClick={onCartOpen}>
-        🛒 <span>{cartCount}</span>
-      </button>
+      <Link to="/" className="logo">Aluminum Store</Link>
+
+      <div className="header-actions">
+        <button onClick={toggleTheme}>🌙 / ☀️</button>
+        <Link to="/checkout">🛒 {cart.length}</Link>
+      </div>
     </header>
   );
 }
