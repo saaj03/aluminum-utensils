@@ -1,15 +1,36 @@
 .header {
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 100;
   background: #111;
-  color: white;
-  padding: 16px 24px;
+  color: #fff;
+  padding: 14px 24px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
-.header-actions {
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav a {
+  margin-right: 16px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.actions {
   display: flex;
-  gap: 15px;
+  align-items: center;
+  gap: 12px;
+}
+
+.logout {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
 }

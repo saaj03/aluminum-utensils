@@ -11,7 +11,7 @@ function ProductDetail() {
   const product = products.find((p) => p.id === Number(id));
 
   if (!product) {
-    return <p className="container">Product not found</p>;
+    return <div className="container">Product not found</div>;
   }
 
   return (
@@ -23,13 +23,8 @@ function ProductDetail() {
       <p>{product.description}</p>
       <h2>₹{product.price}</h2>
 
-      <button
-        onClick={() => {
-          addToCart(product);
-          navigate("/checkout");
-        }}
-      >
-        Add to Cart & Checkout
+      <button onClick={() => addToCart(product)}>
+        Add to Cart
       </button>
     </div>
   );

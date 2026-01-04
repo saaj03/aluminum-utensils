@@ -1,12 +1,12 @@
 import kadai from "../assets/images/kadai.jpg";
 import degchi from "../assets/images/degchi.jpg";
 
-export default [
+const defaultProducts = [
   {
     id: 1,
     name: "Aluminum Kadai",
     price: 1200,
-    description: "Heavy-duty kadai for Indian kitchens",
+    description: "Heavy duty aluminum kadai",
     image: kadai
   },
   {
@@ -17,3 +17,8 @@ export default [
     image: degchi
   }
 ];
+
+const products =
+  JSON.parse(localStorage.getItem("products")) || defaultProducts;
+
+export default products;
